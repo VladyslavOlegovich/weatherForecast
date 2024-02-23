@@ -1,0 +1,21 @@
+.dayContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 600px;
+}
+
+.dayContainer img {
+  width: 50px;
+  height: 50px;
+}
+
+.day {
+  margin-left: 20px;
+}
+
+.gray {
+  color: #a4a4a4;
+}

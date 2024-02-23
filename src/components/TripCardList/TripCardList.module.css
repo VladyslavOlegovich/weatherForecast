@@ -1,0 +1,11 @@
+.tripListContainer {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  box-sizing: border-box;
+  max-width: 600px;
+}

@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+}
+.main {
+  flex: 2;
+  margin-left: 100px;
+}
+.side {
+  flex: 1;
+}
+.header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 240px;
+}
+.btn {
+  width: 150px;
+  height: 200px;
+  background-color: #f0f8ff;
+  border: none;
+  cursor: pointer;
+}
