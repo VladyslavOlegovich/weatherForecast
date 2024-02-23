@@ -18,6 +18,7 @@ export const Modal = ({ handleAddTrip, isOpen, setIsModalOpen }) => {
   const closeModal = (event) => {
     event.stopPropagation();
     setIsModalOpen(false);
+    console.log("Modal closed");
   };
 
   const handleChange = (event) => {
@@ -69,6 +70,8 @@ export const Modal = ({ handleAddTrip, isOpen, setIsModalOpen }) => {
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
+                  onClick={(e) => e.stopPropagation()}
+                  onMouseDown={(e) => e.stopPropagation()}
                 >
                   <option value="">Select a city</option>
                   {cities.map((city) => (
@@ -86,6 +89,8 @@ export const Modal = ({ handleAddTrip, isOpen, setIsModalOpen }) => {
                   name="startDate"
                   value={formData.startDate}
                   onChange={handleChange}
+                  onClick={(e) => e.stopPropagation()}
+                  onMouseDown={(e) => e.stopPropagation()}
                 />
                 <label htmlFor="endDate">
                   <span>*</span> End Date
@@ -96,12 +101,16 @@ export const Modal = ({ handleAddTrip, isOpen, setIsModalOpen }) => {
                   name="endDate"
                   value={formData.endDate}
                   onChange={handleChange}
+                  onClick={(e) => e.stopPropagation()}
+                  onMouseDown={(e) => e.stopPropagation()}
                 />
                 <div className={classes.btnsContainer}>
                   <button type="button" onClick={closeModal}>
                     Cancel
                   </button>
-                  <button type="submit">Save</button>
+                  <button type="button" onClick={handleSubmit}>
+                    Save
+                  </button>
                 </div>
               </form>
             </div>

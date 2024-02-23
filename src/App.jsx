@@ -58,7 +58,8 @@ function App() {
             <Modal
               handleAddTrip={handleAddTrip}
               isOpen={isModalOpen}
-              setOpen={setIsModalOpen}
+              // setOpen={setIsModalOpen}
+              setIsModalOpen={setIsModalOpen}
             />
           )}
 
