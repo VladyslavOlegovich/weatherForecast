@@ -1,5 +1,6 @@
 .tripInfoContainer {
-  background-image: url("./background-4.png");
+  /* background-image: url("./background-4.png"); */
+  background-image: url("../../../public/background-4.png");
 
   background-size: cover;
   background-position: center;
